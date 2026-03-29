@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LezzetBul - T&#252;rkiye'nin En Lezzetli Restoran Bulucu Uygulamas&#305;</title>
+  <meta name="description" content="Konumuna en yak&#305;n en iyi restoranlar&#305; bul! Kategoriye g&#246;re filtrele, puanla s&#305;rala, arkada&#351;lar&#305;nla payla&#351;.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.png" alt="LezzetBul Logo" class="nav-logo-img">
+        <span>LezzetBul</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">&#214;zellikler</a>
+        <a href="#how-it-works">Nas&#305;l &#199;al&#305;&#351;&#305;r</a>
+        <a href="#screenshots">Ekran G&#246;r&#252;nt&#252;leri</a>
+        <a href="#stats">&#304;statistikler</a>
+        <a href="#download" class="nav-cta">&#304;ndir</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">T&#252;rkiye'nin #1 Restoran Bulucu</div>
+        <h1>Lezzeti <span class="gradient-text">Ke&#351;fet</span>, Tad&#305;na Bak!</h1>
+        <p class="hero-desc">Konumuna en yak&#305;n en iyi restoranlar&#305; bul, kategoriye g&#246;re filtrele, arkada&#351;lar&#305;nla payla&#351;. T&#252;rkiye'nin her yerinde &#231;al&#305;&#351;an ak&#305;ll&#305; restoran &#246;neri uygulamas&#305;.</p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Hemen &#304;ndir
+          </a>
+          <a href="#features" class="btn btn-outline btn-lg">
+            &#214;zellikleri G&#246;r
+          </a>
+        </div>
+        <div class="hero-stats-row">
+          <div class="hero-stat">
+            <strong>10K+</strong>
+            <span>Restoran</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>81</strong>
+            <span>&#304;l</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>12</strong>
+            <span>Kategori</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="mock-app">
+                <div class="mock-header">
+                  <img src="assets/logo.png" alt="" class="mock-logo">
+                  <div>
+                    <div class="mock-title">LezzetBul</div>
+                    <div class="mock-subtitle">&#304;stanbul, Kad&#305;k&#246;y</div>
+                  </div>
+                </div>
+                <div class="mock-search">&#350;ehir veya il&#231;e ara...</div>
+                <div class="mock-categories">
+                  <span class="mock-cat active">T&#252;m&#252;</span>
+                  <span class="mock-cat">Kebap</span>
+                  <span class="mock-cat">Pizza</span>
+                  <span class="mock-cat">Cafe</span>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-card-img"></div>
+                  <div class="mock-card-body">
+                    <div class="mock-card-name">Lezzet Dura&#287;&#305;</div>
+                    <div class="mock-card-info">
+                      <span class="mock-star">4.8</span>
+                      <span class="mock-dist">1.2 km</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-card-img img2"></div>
+                  <div class="mock-card-body">
+                    <div class="mock-card-name">Anadolu Sofras&#305;</div>
+                    <div class="mock-card-info">
+                      <span class="mock-star">4.6</span>
+                      <span class="mock-dist">2.5 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">&#214;zellikler</span>
+        <h2>Neden <span class="gradient-text">LezzetBul</span>?</h2>
+        <p>Yemek yiyecek yer aramak hi&#231; bu kadar kolay olmam&#305;&#351;t&#305;.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos>
+          <div class="feature-icon" style="background: rgba(255,107,53,0.1);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Konum Tabanl&#305; Arama</h3>
+          <p>GPS ile otomatik konum belirle veya istedi&#287;in &#351;ehri ara. T&#252;rkiye'nin 81 ilinde &#231;al&#305;&#351;&#305;r.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon" style="background: rgba(0,78,137,0.1);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#004E89" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>12 Yemek Kategorisi</h3>
+          <p>Hamburger, kebap, pizza, bal&#305;k, tatl&#305;, cafe ve daha fazlas&#305;. &#304;stedi&#287;in kategoriyi se&#231;!</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon" style="background: rgba(46,204,113,0.1);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>Ak&#305;ll&#305; &#214;neri Sistemi</h3>
+          <p>Anket modunda modunu ve b&#252;t&#231;eni se&#231;, sana &#246;zel restoran &#246;nerileri al. Yapay zeka destekli s&#305;ralama.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon" style="background: rgba(231,76,60,0.1);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E74C3C" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Favoriler &amp; Payla&#351;&#305;m</h3>
+          <p>Be&#287;endi&#287;in restoranlar&#305; favorilere kaydet, arkada&#351;lar&#305;nla payla&#351;. Veriler cihaz&#305;nda g&#252;venle saklan&#305;r.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon" style="background: rgba(155,89,182,0.1);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9B59B6" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Arkada&#351; Sistemi</h3>
+          <p>Arkada&#351;lar&#305;n&#305; ekle, birlikte lezzetleri ke&#351;fet. Profil olu&#351;tur ve deneyimini ki&#351;iselle&#351;tir.</p>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="feature-icon" style="background: rgba(52,152,219,0.1);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3498DB" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3>Kar&#351;&#305;la&#351;t&#305;rma Modu</h3>
+          <p>Birden fazla restoran&#305; yan yana kar&#351;&#305;la&#351;t&#305;r. Puan, mesafe, fiyat ve yorumlar&#305; tek ekranda g&#246;r.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Ad&#305;mlar</span>
+        <h2>Nas&#305;l <span class="gradient-text">&#199;al&#305;&#351;&#305;r</span>?</h2>
+        <p>3 basit ad&#305;mda en yak&#305;n en iyi restoran&#305; bul.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-aos>
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Konumunu Belirle</h3>
+            <p>GPS ile otomatik konum al veya istedi&#287;in &#351;ehri/il&#231;eyi ara.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step" data-aos>
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Filtrele &amp; Se&#231;</h3>
+            <p>Kategori, mesafe, puan ve fiyat aral&#305;&#287;&#305;na g&#246;re filtrele.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step" data-aos>
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Ke&#351;fet &amp; Tad&#305;n&#305; &#199;&#305;kar</h3>
+            <p>Detaylar&#305; incele, yol tarifi al, arkada&#351;lar&#305;nla payla&#351;!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Uygulama</span>
+        <h2>Ekran <span class="gradient-text">G&#246;r&#252;nt&#252;leri</span></h2>
+        <p>LezzetBul'un &#351;&#305;k ve kullan&#305;c&#305; dostu aray&#252;z&#252;ne g&#246;z at.</p>
+      </div>
+      <div class="screenshots-showcase">
+        <div class="screenshot-item" data-aos>
+          <div class="screenshot-phone">
+            <div class="sp-screen">
+              <div class="sp-demo explore">
+                <div class="sp-bar">Ke&#351;fet</div>
+                <div class="sp-cards">
+                  <div class="sp-minicard"></div>
+                  <div class="sp-minicard"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Ke&#351;fet Ekran&#305;</h4>
+          <p>Yak&#305;n&#305;ndaki restoranlar&#305; listele ve filtrele</p>
+        </div>
+        <div class="screenshot-item" data-aos>
+          <div class="screenshot-phone">
+            <div class="sp-screen">
+              <div class="sp-demo survey">
+                <div class="sp-bar">Anket</div>
+                <div class="sp-question">Ne yemek istiyorsun?</div>
+                <div class="sp-options">
+                  <span>Kebap</span><span>Pizza</span><span>Cafe</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Ak&#305;ll&#305; Anket</h4>
+          <p>Modunu se&#231;, sana &#246;zel &#246;neriler al</p>
+        </div>
+        <div class="screenshot-item" data-aos>
+          <div class="screenshot-phone">
+            <div class="sp-screen">
+              <div class="sp-demo map">
+                <div class="sp-bar">Harita</div>
+                <div class="sp-map-area">
+                  <div class="sp-pin"></div>
+                  <div class="sp-pin p2"></div>
+                  <div class="sp-pin p3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Harita G&#246;r&#252;n&#252;m&#252;</h4>
+          <p>Restoranlar&#305; haritada g&#246;r</p>
+        </div>
+        <div class="screenshot-item" data-aos>
+          <div class="screenshot-phone">
+            <div class="sp-screen">
+              <div class="sp-demo profile">
+                <div class="sp-bar">Profil</div>
+                <div class="sp-avatar">M</div>
+                <div class="sp-uname">Metin</div>
+                <div class="sp-friend-list">
+                  <div class="sp-friend"></div>
+                  <div class="sp-friend"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Profil &amp; Arkada&#351;lar</h4>
+          <p>Hesap olu&#351;tur, arkada&#351; ekle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-aos>
+          <div class="stat-value" data-count="10000">0</div>
+          <div class="stat-label">Restoran</div>
+        </div>
+        <div class="stat-card" data-aos>
+          <div class="stat-value" data-count="81">0</div>
+          <div class="stat-label">&#304;l</div>
+        </div>
+        <div class="stat-card" data-aos>
+          <div class="stat-value" data-count="12">0</div>
+          <div class="stat-label">Kategori</div>
+        </div>
+        <div class="stat-card" data-aos>
+          <div class="stat-value" data-count="2">0</div>
+          <div class="stat-label">Dil Deste&#287;i</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <div class="download-card">
+        <div class="download-content">
+          <img src="assets/logo.png" alt="LezzetBul" class="download-logo">
+          <h2>LezzetBul'u Hemen &#304;ndir!</h2>
+          <p>T&#252;rkiye'nin en iyi restoran bulucu uygulamas&#305;n&#305; telefonuna y&#252;kle ve lezzeti ke&#351;fetmeye ba&#351;la.</p>
+          <div class="download-buttons">
+            <a href="https://play.google.com/store" class="btn btn-primary btn-lg" target="_blank">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
+              Google Play
+            </a>
+            <a href="#" class="btn btn-white btn-lg" onclick="alert('APK indirme ba&#287;lant&#305;s&#305; yak&#305;nda eklenecek!'); return false;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              APK &#304;ndir
+            </a>
+          </div>
+          <p class="download-note">Android 5.0+ gerektirir. &#220;cretsiz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="LezzetBul" class="footer-logo">
+          <span>LezzetBul</span>
+        </div>
+        <div class="footer-links">
+          <a href="#features">&#214;zellikler</a>
+          <a href="#how-it-works">Nas&#305;l &#199;al&#305;&#351;&#305;r</a>
+          <a href="#download">&#304;ndir</a>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 LezzetBul. T&#252;m haklar&#305; sakl&#305;d&#305;r.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
